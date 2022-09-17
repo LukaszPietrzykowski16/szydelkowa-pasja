@@ -13,7 +13,7 @@ function Navigation() {
         menu === true ? setMenu(false) : setMenu(true)
     }
   return (
-    <nav className='bg-gray-800 text-indigo-600 h-1/5'>
+    <nav className='bg-white-200 text-grey-600 h-1/5 border-b-2 border-grey-200'>
         <div className='container flex h-full'>
             <div className='container flex flex-wrap justify-between items-center mx-auto'>
                 <div className='container flex flex-wrap justify-center items-center w-full h-20 p-1'>
