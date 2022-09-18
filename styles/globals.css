@@ -14,3 +14,42 @@ body {
   box-sizing: border-box;
 }
 
+
+.menu {
+  height: 80vh;
+  position: absolute;
+  transition-timing-function: ease-in;
+  transition: 0.3s;
+  transform: translateX(250px);
+  background-color: #999;
+
+}
+
+.list-open {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  
+}
+
+p {
+  
+}
+
+.list {
+  display: none;
+}
+
+.menu-open {
+  width: 250px;
+  height: 80vh;
+  position: absolute;
+  right: 0;
+  transition: 0.25s;
+  transition-timing-function: ease-out;
+  opacity: 1;
+  background-color: #999;
+  transform: translateX(0);
+  opacity: 1;
+}
