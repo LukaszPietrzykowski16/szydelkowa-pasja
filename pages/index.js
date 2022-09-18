@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import FirstPanel from './components/FirstPanel'
+import FirstPanelStripes from './components/FirstPanelStripes'
 import Front from './components/Front'
 import Navigation from './components/Navigation'
 
@@ -14,7 +16,7 @@ export default function Home() {
       </Head>
       <Navigation />
       <Front />
-     
+      <FirstPanelStripes />
     </>
  
   )
