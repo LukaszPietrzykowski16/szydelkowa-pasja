@@ -1,11 +1,11 @@
 import React from 'react'
-import img0 from '../images/first-project-0.jpg'
-import img1 from '../images/first-project-1.jpg'
-import img2 from '../images/first-project-2.jpg'
+import img0 from '../images/first-project/first-project-0.jpg'
+import img1 from '../images/first-project/first-project-1.jpg'
+import img2 from '../images/first-project/first-project-2.jpg'
 
 function FirstPanel() {
   return (
-    <div className='flex flex-wrap justify-center align-center mt-8 md:flex-nowrap'>
+    <div className='flex flex-wrap justify-center align-center mt-8 mb-8 md:flex-nowrap h-screen pt-20'>
       <div className='parent w-4/5'>   
         <div className='div1'> <img src={img2.src} className="w-full rounded-lg"/> </div>
         <div className='div2'> <img src={img1.src} className="w-full rounded-lg"/> </div>

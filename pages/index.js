@@ -5,6 +5,8 @@ import FirstPanel from './components/FirstPanel'
 import FirstPanelStripes from './components/FirstPanelStripes'
 import Front from './components/Front'
 import Navigation from './components/Navigation'
+import SecondPanel from './components/SecondPanel'
+import SecondPanelStripes from './components/SecondPanelStripes'
 
 export default function Home() {
   return (
@@ -18,6 +20,8 @@ export default function Home() {
       <Front />
       <FirstPanelStripes />
       <FirstPanel />
+      <SecondPanelStripes />
+      <SecondPanel />
     </>
  
   )
