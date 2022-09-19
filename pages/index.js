@@ -7,6 +7,8 @@ import Front from './components/Front'
 import Navigation from './components/Navigation'
 import SecondPanel from './components/SecondPanel'
 import SecondPanelStripes from './components/SecondPanelStripes'
+import ThirdPanel from './components/ThirdPanel'
+import ThirdPanelStripes from './components/ThirdPanelStripes'
 
 export default function Home() {
   return (
@@ -22,6 +24,8 @@ export default function Home() {
       <FirstPanel />
       <SecondPanelStripes />
       <SecondPanel />
+      <ThirdPanelStripes />
+      <ThirdPanel />
     </>
  
   )
