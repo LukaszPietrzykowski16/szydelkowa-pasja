@@ -7,7 +7,7 @@ function Front() {
   return (
 
 
-    <main className='block md:flex '>
+    <main className='block md:flex mb-20'>
             <div className='w-full flex justify-center mt-10'>
                 <img src={picture.src} className="sm:center w-4/5 md:w-2/3 rounded-lg"/>
             </div>
@@ -19,9 +19,6 @@ function Front() {
                     Dzierganie to mój czas dla siebie, relax i ogromna satysfakcja. 
                 </p>
                 </div>
-                
-                
-    
             </div>
     </main>
   )
