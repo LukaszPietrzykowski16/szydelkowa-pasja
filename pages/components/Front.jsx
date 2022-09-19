@@ -9,7 +9,7 @@ function Front() {
 
     <main className='block md:flex '>
             <div className='w-full flex justify-center mt-10'>
-                <img src={picture.src} className="sm:center w-4/5 md:w-2/3"/>
+                <img src={picture.src} className="sm:center w-4/5 md:w-2/3 rounded-lg"/>
             </div>
             <div className='flex justify-center align-center mt-5 md:flex-wrap md:justify-around md:content-center'>
                 <div className='center w-4/5'>
