@@ -6,8 +6,8 @@ import img2 from '../images/second-project/second-project-2.jpg'
 
 function SecondPanel() {
     return (
-        <div className='flex flex-wrap justify-center align-center mt-8 md:flex-nowrap'>
-            <div className='w-4/5 mt-8 md:flex md:flex-wrap md:justify-around md:content-center md:p-10'>
+        <div className='flex flex-wrap justify-center align-center mt-8 mb-8  md:flex-nowrap'>
+            <div className='w-4/5 mt-8 mb-4 md:flex md:flex-wrap md:justify-around md:content-center md:p-10'>
                 <h3> Miś "Szymon" 💛🐻‍❄️💛 </h3>
                 Miał być zrobiony na 10 czerwca, a ja pomyliłam terminy i myślałam że na 10 lipca 🙈 
                 Dodatkowo potem się okazało ze Maluszek, dla którego ma być, rodzi się 1 czerwca. Więc przyspieszenie było znaczące 💫🏃🏻‍♀️🧶
@@ -19,8 +19,8 @@ function SecondPanel() {
                 Teraz jeszcze kilka rodzinno-przyjacielskich projektów i wracam do królików i jednorożców 🤗
                 Obiecuje😘
             </div>    
-          <div className=''>   
-            <div className='test'> <img src={img2.src} className=""/> </div>
+          <div className='w-2/3 flex justify-center align-center'>   
+            <img src={img2.src} className="w-4/5 rounded-lg"/> 
           </div>
           
         </div>
