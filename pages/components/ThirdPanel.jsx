@@ -25,17 +25,17 @@ function ThirdPanel() {
             </div>
           </div>
           <div className='w-4/5 mt-8 md:flex md:flex-wrap md:justify-around md:content-center md:p-10'>
-            <h3> Krokodyl "Michał"💚🐊💚 </h3>
+            <h4 className='text-5xl'> Krokodyl "Michał" 🐊 </h4>
                 
-            Na specjalne życzenie Mojego Chrzesniaka! 🥳
-            Ma prawie 50cm długości i wykonany jest z mieciutkiej pluszowej włóczki 💚🐊🧶💚
+            Na specjalne życzenie Mojego Chrzesniaka! 
+            Ma prawie 50cm długości i wykonany jest z mieciutkiej pluszowej włóczki 
             Wzór od OliMori
-            Trochę zaduma go złapała, bo miał mieć sesje zdjęciową na dworze, jednak deszcz zdecydowanie pokrzyżował nam plany 📷🤦🏻‍♀️🌧☔💦📷
-            Dobrze ze potem na chwilę wyszło słońce! 🌞
+            Trochę zaduma go złapała, bo miał mieć sesje zdjęciową na dworze, jednak deszcz zdecydowanie pokrzyżował nam plany
+            Dobrze ze potem na chwilę wyszło słońce!
             Eh... I obawiam się, że powoli trzeba już będzie się przestawiać na aranzacje  domowe, a ja zdecydowanie polubiłam ujęcia na zewnątrz
-            🌳🌲🌷🍁🌳
-            Mam nadzieję, że lada chwila przyjdzie piękna, złota i ciepła jesień 🍁🍂
-            Na to liczę!🤩
+      
+            Mam nadzieję, że lada chwila przyjdzie piękna, złota i ciepła jesień 
+            Na to liczę!
 
           </div>    
           

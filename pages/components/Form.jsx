@@ -88,21 +88,28 @@ function Form() {
 
 
     </div>
-    <div className='flex justify-center items-center w-full p-1 border-t-2 border-white mt-4'>
-        <div> 
-          SZYDEŁKOWA PASJA 
+    <div className='flex flex-col justify-center align-center w-full p-1 border-t-2 border-white mt-4'>
+        <div className='text-center text-3xl text-white pt-5'> 
+          SZYDEŁKOWA PASJA  
         </div>
-        <div> 
-          <div>
-          <p> Strona główna </p>
-          <p> Blog </p>
+        <div className='flex justify-center align-center'> 
+          <div className='m-3'>    
+            <ul>
+              <li> Strona główna  </li>
+              <li>  Blog </li>
+            </ul>
           </div>
-          <div>
-          <p> O mnie </p>
-          <p> Faceebook </p>
+          <div  className='m-3'>    
+            <ul>
+              <li> O mnie  </li>
+              <li> Facebook </li>
+            </ul>
           </div>
         </div>
     </div> 
+    <div className='text-sm w-full flex justify-center align-center text-center'>
+      Wszelkie prawa zastrzeżone. Strona stworzona przez Łukasza Pietrzykowskiego
+    </div>
     </footer>
   )
 }
