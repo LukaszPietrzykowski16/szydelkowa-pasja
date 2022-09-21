@@ -1,9 +1,11 @@
 import React from 'react'
+import logo from '../images/logo.jpg';
 
 function Form() {
   return (
+    <footer>
     <div className='flex justify-center align-center w-full'>
-<div className="block p-6 rounded-lg shadow-lg bg-white max-w-md">
+<div className="glass block p-6 rounded-lg shadow-lg bg-white w-4/5 md:w-1/3 mt-8">
   <form>
     <div className="form-group mb-6">
       <input type="text" className="form-control block
@@ -67,17 +69,17 @@ function Form() {
       w-full
       px-6
       py-2.5
-      bg-blue-600
-      text-white
+      bg-white
+      text-black
       font-medium
       text-xs
       leading-tight
       uppercase
       rounded
       shadow-md
-      hover:bg-blue-700 hover:shadow-lg
-      focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
-      active:bg-blue-800 active:shadow-lg
+      hover: bg-zinc-50 hover:shadow-lg
+      focus: bg-white focus:shadow-lg focus:outline-none focus:ring-0
+      active: bg-white active:shadow-lg
       transition
       duration-150
       ease-in-out">Send</button>
@@ -86,6 +88,22 @@ function Form() {
 
 
     </div>
+    <div className='flex justify-center items-center w-full p-1 border-t-2 border-white mt-4'>
+        <div> 
+          SZYDEŁKOWA PASJA 
+        </div>
+        <div> 
+          <div>
+          <p> Strona główna </p>
+          <p> Blog </p>
+          </div>
+          <div>
+          <p> O mnie </p>
+          <p> Faceebook </p>
+          </div>
+        </div>
+    </div> 
+    </footer>
   )
 }
 

@@ -7,9 +7,6 @@ import { faXmarkCircle } from '@fortawesome/free-regular-svg-icons';
 
 function Navigation() {
     const [menu, setMenu] = useState(false)
-
-    console.log(menu)
-
     const hideMenu = (menu) => {
         menu === true ? setMenu(false) : setMenu(true)
     }
