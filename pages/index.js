@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 import Contact from './components/Contact'
 import FirstPanel from './components/FirstPanel'
 import FirstPanelStripes from './components/FirstPanelStripes'
+import Form from './components/Form'
 import Front from './components/Front'
 import Navigation from './components/Navigation'
 import SecondPanel from './components/SecondPanel'
@@ -28,6 +29,7 @@ export default function Home() {
       <ThirdPanelStripes />
       <ThirdPanel />
       <Contact />
+      <Form />
     </>
  
   )
