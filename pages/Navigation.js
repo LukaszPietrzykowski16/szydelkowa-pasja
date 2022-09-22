@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import test from '../images/logo.jpg';
+import test from './images/logo.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faXmarkCircle } from '@fortawesome/free-regular-svg-icons';
-
+import Link from 'next/link';
 
 function Navigation() {
     const [menu, setMenu] = useState(false)
@@ -11,7 +11,7 @@ function Navigation() {
         menu === true ? setMenu(false) : setMenu(true)
     }
   return (
-   
+  
     <nav className='bg-white-200 text-grey-600 h-1/5 border-b-2 border-grey-200 w-full'>
         <div className='container flex h-full'>
             <div className='container flex flex-wrap justify-between items-center mx-auto'>
@@ -20,15 +20,16 @@ function Navigation() {
                 </div> 
             </div>
             <div className='md: hidden md:container md:flex md:flex-wrap md:justify-around md:items-center md:mx-auto'>
-                <a className='flex items-center'>
-                    Strona główna
-                </a>
-                <a className='flex items-center'>
-                    Blog
-                </a>
-                <a className='flex items-center'>
-                    O mnie
-                </a>
+                <ul className='flex items-center'>
+                    <li> <Link href="/"> Strona główna </Link> </li>
+                </ul>
+                <ul className='flex items-center'>
+                    <li>  <Link href="/blog"> Blog </Link> </li>
+                </ul>
+                <ul className='flex items-center'>
+                    <li> <Link href="/o-mnie"> O mnie </Link>
+                </li>
+                </ul>
             </div>
             <div className='md:hidden md:block w-full flex justify-center'>
                 <div className="flex items-center w-10" onClick={() => hideMenu(menu)}>
@@ -39,14 +40,21 @@ function Navigation() {
         
         <div className={menu === false? 'menu': 'menu-open'}>
        <div className='list'>
-            <p> Strona główna </p>
-            <p> Blog </p>
-            <p> O mnie </p>
+                <ul className='flex items-center'>
+                    <li> <Link href="/"> Strona główna </Link> </li>
+                </ul>
+                <ul className='flex items-center'>
+                    <li>  <Link href="/blog"> Blog </Link> </li>
+                </ul>
+                <ul className='flex items-center'>
+                    <li> <Link href="/o-mnie"> O mnie </Link>
+                </li>
+                </ul>
        </div>
     </div>
         
     </nav>
-   
+    
 
   )
 }
