@@ -38,7 +38,7 @@ function Navigation() {
         </div>
         
         <div className={menu === false? 'menu': 'menu-open'}>
-       <div className={menu === false? 'list': 'list-open'}>
+       <div className='list'>
             <p> Strona główna </p>
             <p> Blog </p>
             <p> O mnie </p>

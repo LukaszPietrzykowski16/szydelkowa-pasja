@@ -16,13 +16,19 @@ body {
 
 
 .menu {
-  height: 80vh;
-  position: absolute;
-  transition-timing-function: ease-in;
-  transition: 0.3s;
-  transform: translateX(250px);
-  background-color: #999;
-
+  transform: translateX(100%);
+  display: flex;
+  position: fixed;
+  top: 10;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  transition: 0.45s;
+  z-index: 9999;
 }
 
 .list-open {
@@ -33,21 +39,22 @@ body {
   
 }
 
-.list {
-  display: none;
-}
+
 
 .menu-open {
-  width: 250px;
-  height: 80vh;
-  position: absolute;
-  right: 0;
-  transition: 0.25s;
-  transition-timing-function: ease-out;
-  opacity: 1;
-  background-color: #999;
   transform: translateX(0);
-  opacity: 1;
+  display: flex;
+  position: fixed;
+  top: 10;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  transition: 0.45s;
+  z-index: 9999;
 }
 
 /*
