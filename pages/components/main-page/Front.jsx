@@ -1,5 +1,5 @@
 import React from 'react'
-import picture from '../images/main-picture.jpg'
+import picture from '../../images/main-picture.jpg'
 
 
 function Front() {

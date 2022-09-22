@@ -1,7 +1,7 @@
 import React from 'react'
-import img0 from '../images/second-project/second-project-0.jpg'
-import img1 from '../images/second-project/second-project-1.jpg'
-import img2 from '../images/second-project/second-project-2.jpg'
+import img0 from '../../images/second-project/second-project-0.jpg'
+import img1 from '../../images/second-project/second-project-1.jpg'
+import img2 from '../../images/second-project/second-project-2.jpg'
 
 
 function SecondPanel() {
