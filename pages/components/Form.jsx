@@ -3,7 +3,7 @@ import logo from '../images/logo.jpg';
 
 function Form() {
   return (
-    <footer>
+   
     <div className='flex justify-center align-center w-full'>
 <div className="glass block p-6 rounded-lg shadow-lg bg-white w-4/5 md:w-1/3 mt-8">
   <form>
@@ -88,29 +88,7 @@ function Form() {
 
 
     </div>
-    <div className='flex flex-col justify-center align-center w-full p-1 border-t-2 border-white mt-4'>
-        <div className='text-center text-3xl text-white pt-5'> 
-          SZYDEŁKOWA PASJA  
-        </div>
-        <div className='flex justify-center align-center'> 
-          <div className='m-3'>    
-            <ul>
-              <li> Strona główna  </li>
-              <li>  Blog </li>
-            </ul>
-          </div>
-          <div  className='m-3'>    
-            <ul>
-              <li> O mnie  </li>
-              <li> Facebook </li>
-            </ul>
-          </div>
-        </div>
-    </div> 
-    <div className='text-sm w-full flex justify-center align-center text-center'>
-      Wszelkie prawa zastrzeżone. Strona stworzona przez Łukasza Pietrzykowskiego
-    </div>
-    </footer>
+   
   )
 }
 
