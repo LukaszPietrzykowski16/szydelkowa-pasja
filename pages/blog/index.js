@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React, {useState} from 'react'
 import Footer from '../components/Footer'
 import Navigation from '../Navigation'
@@ -10,8 +11,9 @@ function Blog ({posts}){
     <Navigation />
     <div className='block md:grid md:grid-cols-3'>
     {posts.map((post) => 
- 
+  
   <div className='flex flex-wrap justify-center align-center mt-8 w-full'>
+    <Link href={`/blog/${post.slug}`}>
     <div className='w-4/5 rounded-lg p-4 border-2 border-sky-500'>
     <div className='w-full'>
       <img src={post.imageblog.url} alt={post.title} className="rounded-lg"/>
@@ -32,8 +34,8 @@ function Blog ({posts}){
     </div>
     
     </div>
-   
-
+    </Link>
+    
  </div>)}
     </div>
    
@@ -49,5 +51,7 @@ export async function getStaticProps(){
     props: { posts },
   };
 }
+
+
 
 export default Blog
