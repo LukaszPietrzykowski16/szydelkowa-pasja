@@ -9,21 +9,22 @@ export const getPosts = async () => {
     blogs {
       author
       date
-      image {
-        url
-      }
       title
       slug
       content {
         text
       }
+
     }
+    assets {
+        url
+      }
   }
   `
 
   const result = await request(graphqlAPI, query);
-  console.log(result)
-  return result
+  console.log(result.blogs)
+  return result.blogs
 
 }
 

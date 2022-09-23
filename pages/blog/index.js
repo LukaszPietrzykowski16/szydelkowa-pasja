@@ -1,13 +1,27 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Footer from '../components/Footer'
 import Navigation from '../Navigation'
 import getPosts from '../services'
 
-function blog() {
+function Blog ({posts}){
+  console.log(posts)
   return (
     <>
     <Navigation />
-    <div>blog</div>
+ 
+    {posts.map((post) => 
+    <div className='post'>
+      <div className='post-img'>
+        <img src={post.image}/>
+      </div>
+      <div className='post-text'>
+        <span> {post.title}</span>
+        <p> {post.content.text} </p>
+      </div>
+
+
+    </div>)}
+    
     <Footer />
     </>
   )
@@ -15,10 +29,9 @@ function blog() {
 
 export async function getStaticProps(){
   const posts = await getPosts()
-  console.log(posts)
   return {
     props: { posts },
   };
 }
 
-export default blog
+export default Blog
