@@ -14,11 +14,10 @@ export const getPosts = async () => {
       content {
         text
       }
-
-    }
-    assets {
+      imageblog {
         url
       }
+    }
   }
   `
 
