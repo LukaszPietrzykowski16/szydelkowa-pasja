@@ -2,13 +2,36 @@ import React from 'react'
 import img0 from '../../images/second-project/second-project-0.jpg'
 import img1 from '../../images/second-project/second-project-1.jpg'
 import img2 from '../../images/second-project/second-project-2.jpg'
-
+import { motion } from "framer-motion"
+import {useInView} from 'react-intersection-observer'
+import {useEffect, useState} from 'react'
+import {useAnimation} from 'framer-motion'
 
 function SecondPanel() {
+    const animation = useAnimation();
+
+    const {ref, inView} = useInView({
+      threshold: 0.2
+    });
+
+    useEffect(() => {
+      if(inView){
+        animation.start({
+          opacity: 1,
+          transition: {
+          type: 'spring', duration: 1.5, bounce: 0.3,
+        }
+        })}
+        if(!inView){
+          animation.start({ opacity: 0})
+        }
+        
+    })
+
     return (
         <div className='flex flex-wrap justify-center align-center mt-8 mb-8  md:flex-nowrap'>
             <div className='w-4/5 mt-8 mb-4 md:flex md:flex-wrap md:justify-around md:content-center md:p-10'>
-                <h3 className='text-5xl'> Miś "Szymon" 🐻 </h3>
+                <h3 className='text-5xl' ref={ref}> Miś "Szymon" 🐻 </h3>
                 Miał być zrobiony na 10 czerwca, a ja pomyliłam terminy i myślałam że na 10 lipca  
                 Dodatkowo potem się okazało ze Maluszek, dla którego ma być, rodzi się 1 czerwca. Więc przyspieszenie było znaczące 
                 Ale udało się! 
@@ -19,9 +42,9 @@ function SecondPanel() {
                 Teraz jeszcze kilka rodzinno-przyjacielskich projektów i wracam do królików i jednorożców 
                 Obiecuje
             </div>    
-          <div className='w-2/3 flex justify-center align-center'>   
+          <motion.div animate={animation} className='w-2/3 flex justify-center align-center'>   
             <img src={img2.src} className="w-4/5 rounded-lg"/> 
-          </div>
+          </motion.div>
           
         </div>
         
