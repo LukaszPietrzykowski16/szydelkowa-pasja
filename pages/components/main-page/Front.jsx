@@ -5,14 +5,6 @@ import { motion } from "framer-motion"
 
 function Front() {
 
-/*
-  const [under, setUnder] = useState(null)
-
-  useEffect(() => {
-    const timer = setTimeout(() => setUnder('hover-underline-animation'), 3000);
-    return () => clearTimeout(timer);
-  }, []);
-*/
   return (
 
 
