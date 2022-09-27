@@ -97,3 +97,26 @@ backdrop-filter: blur( 2.5px );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff64a4;
+  transform-origin: bottom right;
+  transition: transform 1.7s ease-out;
+}
+
+.hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
