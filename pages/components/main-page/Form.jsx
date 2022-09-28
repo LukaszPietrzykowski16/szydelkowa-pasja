@@ -3,9 +3,15 @@ import logo from '../../images/logo.jpg';
 
 function Form() {
   return (
-   
+    <div className='flex flex-wrap justify-center align-center w-full md:flex-nowrap'>
+       <div className='flex justify-center align-center w-full'>
+   <div className="glass block p-6 rounded-lg shadow-lg bg-white w-4/5 md:w-4/5 mt-8">
+      <div className=''> Zapraszam na facebooka </div>
+      <div className=''>  Zapraszam na bloga</div>
+   </div>
+   </div>
     <div className='flex justify-center align-center w-full'>
-<div className="glass block p-6 rounded-lg shadow-lg bg-white w-4/5 md:w-1/3 mt-8">
+<div className="glass block p-6 rounded-lg shadow-lg bg-white w-4/5 md:w-4/5 mt-8">
   <form>
     <div className="form-group mb-6">
       <input type="text" className="form-control block
@@ -88,7 +94,8 @@ function Form() {
 
 
     </div>
-   
+     
+    </div>
   )
 }
 

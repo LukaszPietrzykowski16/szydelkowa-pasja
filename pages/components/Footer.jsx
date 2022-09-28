@@ -1,4 +1,7 @@
 import React from 'react'
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faXmarkCircle } from '@fortawesome/free-regular-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Footer() {
   return (
@@ -16,8 +19,8 @@ function Footer() {
         </div>
     </div> 
     <div className='text-sm w-full flex justify-around content-center text-center h-36 pt-10 '>
-      <div className='test'>
-          F
+      <div className='w-14'>
+          <FontAwesomeIcon icon={faXmarkCircle}/>
         </div>
         <div className='test'>
         <button className='bg-blue-500 text-white font-bold py-2 px-4 rounded opacity-50 cursor-not-allowed'> Do góry! </button>

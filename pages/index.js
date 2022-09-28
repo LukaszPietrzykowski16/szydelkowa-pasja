@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Contact from './components/main-page/Contact'
 import FirstPanel from './components/main-page/FirstPanel'
 import FirstPanelStripes from './components/main-page/FirstPanelStripes'
 import Footer from './components/Footer'
@@ -29,7 +28,6 @@ export default function Home() {
       <SecondPanel />
       <ThirdPanelStripes />
       <ThirdPanel />
-      <Contact />
       <Form />
       <Footer />
     </>
