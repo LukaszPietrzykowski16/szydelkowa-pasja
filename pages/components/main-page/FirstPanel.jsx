@@ -17,7 +17,6 @@ function FirstPanel() {
   const animation1 = useAnimation();
   const animation2 = useAnimation();
   const animation3 = useAnimation();
-  const animation4 = useAnimation();
 
   useEffect(() => {
     if(inView){
