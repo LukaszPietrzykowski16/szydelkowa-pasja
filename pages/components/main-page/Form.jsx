@@ -3,11 +3,26 @@ import logo from '../../images/logo.jpg';
 
 function Form() {
   return (
-    <div className='flex flex-wrap justify-center align-center w-full md:flex-nowrap'>
+    <div className='flex flex-wrap justify-center align-center w-full md:flex-nowrap pb-16'>
        <div className='flex justify-center align-center w-full'>
-   <div className="glass block p-6 rounded-lg shadow-lg bg-white w-4/5 md:w-4/5 mt-8">
-      <div className=''> Zapraszam na facebooka </div>
-      <div className=''>  Zapraszam na bloga</div>
+   <div className="flex flex-wrap justify-center align-center border-sky-500 glass block p-6 rounded-lg w-4/5 md:w-4/5 mt-8">
+      <div className='w-full text-center'>
+        <div className='pb-2'>
+          Zapraszam na facebooka  
+        </div> 
+      <button className="text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+        Facebook
+      </button>
+      </div>
+      <div className='w-full text-center'>  
+      <div className='pb-2'>
+      Zapraszam na bloga
+      </div>
+      <button class="text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+        Blog
+      </button>
+      
+      </div>
    </div>
    </div>
     <div className='flex justify-center align-center w-full'>
