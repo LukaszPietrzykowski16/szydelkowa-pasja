@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faXmarkCircle } from '@fortawesome/free-regular-svg-icons';
 import Link from 'next/link';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 
 function Navigation() {
     const [menu, setMenu] = useState(false)
@@ -12,7 +13,7 @@ function Navigation() {
     }
   return (
   
-    <nav className='bg-white-200 text-grey-600 h-1/5 border-b-2 border-grey-200 w-full'>
+    <nav className='sticky top-0 bg-white z-40 text-grey-600 h-1/5 border-b-2 border-grey-200 w-full'>
         <div className='container flex h-full'>
             <div className='container flex flex-wrap justify-between items-center mx-auto'>
                 <div className='container flex flex-wrap justify-center items-center w-full h-20 p-1'>
@@ -38,19 +39,28 @@ function Navigation() {
             </div>
         </div>
         
-        <div className={menu === false? 'menu': 'menu-open'}>
-       <div className='list'>
-                <ul className='flex items-center'>
+        <div className={menu === false? 'menu sticky top-20': 'menu-open sticky top-20'}>
+       <div className='flex flex-col align-center text-xl'>
+                <ul className='p-8'>
                     <li> <Link href="/"> Strona główna </Link> </li>
                 </ul>
-                <ul className='flex items-center'>
+                <ul className='p-8'>
                     <li>  <Link href="/blog"> Blog </Link> </li>
                 </ul>
-                <ul className='flex items-center'>
+                <ul className='p-8'>
                     <li> <Link href="/o-mnie"> O mnie </Link>
                 </li>
                 </ul>
+                <div className='flex flex-column content-end justify-end h-4/5 items-center'>
+                    <div className='w-8'>  <FontAwesomeIcon icon={faFacebook}/> </div>
+                    <div> 
+                    <button class="block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                     Button
+                    </button>
+                    </div>
+                </div>
        </div>
+       
     </div>
         
     </nav>

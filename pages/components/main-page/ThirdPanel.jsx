@@ -1,7 +1,6 @@
 import React from 'react'
-import img0 from '../../images/third-project/third-project-0.jpg'
-import img1 from '../../images/third-project/third-project-1.jpg'
-import img2 from '../../images/third-project/third-project-3.jpg'
+import img1 from '../../images/third-project/img0.jpg'
+import img2 from '../../images/third-project/img1.jpg'
 import { motion } from "framer-motion"
 import {useInView} from 'react-intersection-observer'
 import {useEffect, useState} from 'react'
@@ -85,7 +84,7 @@ function ThirdPanel() {
               <img src={img1.src} className="w-full rounded-lg"/>
             </motion.div>
             <motion.div className='img-box w-1/5 p-1' animate={animation5}>
-              <img src={img2.src} className="w-full rounded-lg"/>
+              <img src={img1.src} className="w-full rounded-lg"/>
             </motion.div>
           </div>
           <div className='w-4/5 mt-8 md:flex md:flex-wrap md:justify-around md:content-center md:p-10'>

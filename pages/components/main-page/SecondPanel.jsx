@@ -1,7 +1,5 @@
 import React from 'react'
-import img0 from '../../images/second-project/second-project-0.jpg'
-import img1 from '../../images/second-project/second-project-1.jpg'
-import img2 from '../../images/second-project/second-project-2.jpg'
+import img2 from '../../images/second-project/img1.jpg'
 import { motion } from "framer-motion"
 import {useInView} from 'react-intersection-observer'
 import {useEffect} from 'react'
