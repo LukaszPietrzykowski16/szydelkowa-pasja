@@ -1,14 +1,35 @@
-import React from 'react'
-import img2 from '../../images/second-project/img1.jpg'
+import React, {useState, useEffect} from 'react'
+import img0 from '../../images/second-project/img1.jpg'
+import img1 from '../../images/second-project/img0.jpg'
+import img2 from '../../images/second-project/img2.jpg'
 import { motion } from "framer-motion"
 import {useInView} from 'react-intersection-observer'
-import {useEffect} from 'react'
 import {useAnimation} from 'framer-motion'
 
 function SecondPanel() {
     const animation = useAnimation();
     const animation2 = useAnimation();
 
+    const [images, setImages] = useState([img0.src, img1.src, img2.src])
+    const [index, setIndex] = useState(0)
+   
+    if (index === images.length){
+      setIndex(0)
+    }
+    useEffect(() => {
+        
+        const interval = setInterval(() => {
+        setIndex(index => index + 1)
+        }, 5000);
+            return () => clearInterval(interval);
+        }, []);
+  
+   
+
+
+
+
+    
     const {ref, inView} = useInView({
       threshold: 0.1
     });
@@ -48,10 +69,13 @@ function SecondPanel() {
                 Teraz jeszcze kilka rodzinno-przyjacielskich projektów i wracam do królików i jednorożców 
                 Obiecuje</p>
             </motion.div>    
-          <motion.div  animate={animation} className='w-4/5 flex justify-center align-center'>   
-            <img src={img2.src} className="w-4/5 rounded-lg" /> 
-          </motion.div>
-          
+          <motion.div  animate={animation}  className='w-4/5 flex justify-center align-center'>   
+
+            <img src={images[index]} className="w-4/5 rounded-lg" /> 
+             
+              
+            </motion.div>
+            
         </div>
         
       )
