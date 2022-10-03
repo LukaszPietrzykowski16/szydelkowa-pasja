@@ -10,6 +10,24 @@ import {useAnimation} from 'framer-motion'
 function ThirdPanel() {
   const [index, setIndex] = useState(0)
   const images = [img0.src, img1.src, img2.src]
+
+  const variants = {
+    open: { opacity: [0, 1], duration: 0.5},
+    closed: { opacity: [0, 1], duration: 0.5},
+  }
+  
+  const [isOpen, setIsOpen] = useState(false)
+
+  const change = (num) => {
+    if (isOpen === true){
+      setIsOpen(false)
+    } else {
+      setIsOpen(true)
+    }
+    setIndex(index + num)
+    
+  }
+
   if (index === images.length){
     setIndex(0)
   }
@@ -41,11 +59,12 @@ function ThirdPanel() {
  
     return (
         <div className='relative flex flex-wrap justify-center align-center mt-5' ref={ref}>
-          <span className='bg-white absolute top-60 left-10 z-10'  onClick={() => setIndex(index - 1)}> Lewo </span>
+          <span className='bg-white absolute top-60 left-10 z-10' onClick={() => change(-1)}> Lewo </span>
           <motion.div className='w-4/5 flex justify-center align-center md:w-1/2' animate={animation1}>   
-            <img src={images[index]} className="w-full rounded-lg"/> 
+            <motion.img src={images[index]} className="w-full rounded-lg" animate={isOpen ? "open" : "closed"}
+      variants={variants}/> 
           </motion.div>
-          <span className='absolute top-60 right-10 bg-white' onClick={() => setIndex(index + 1)}> Prawo </span>
+          <span className='absolute top-60 right-10 bg-white' onClick={() => change(+1)}> Prawo </span>
           <div className='w-4/5 mt-8 md:flex md:flex-wrap md:justify-around md:content-center md:p-10'>
             <h4 className='text-5xl'> Krokodyl "Michał" 🐊 </h4>
                 
