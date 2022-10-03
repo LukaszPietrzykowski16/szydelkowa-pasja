@@ -10,7 +10,7 @@ function SecondPanel() {
     const animation2 = useAnimation();
 
     const {ref, inView} = useInView({
-      threshold: 0.2
+      threshold: 0.1
     });
 
     useEffect(() => {
@@ -36,9 +36,9 @@ function SecondPanel() {
 
     return (
         <div className='flex flex-wrap justify-center align-center mt-8 mb-8  md:flex-nowrap'>
-            <motion.div animate={animation2} className="svg-bg w-4/5 mt-8 mb-4 md:flex md:flex-wrap md:justify-around md:content-center md:p-10] rounded-lg">
-                <h3 className='text-5xl pt-5 text-center'> Miś "Szymon" 🐻 </h3>
-                <p className='p-10'>Miał być zrobiony na 10 czerwca, a ja pomyliłam terminy i myślałam że na 10 lipca  
+            <motion.div animate={animation2} className="svg-bg w-full mt-8 mb-4 md:flex md:flex-wrap md:justify-around md:content-center md:p-10] rounded-lg" >
+                <h3 className='text-5xl pt-5 text-center' > Miś "Szymon" 🐻 </h3>
+                <p className='p-10' ref={ref}>Miał być zrobiony na 10 czerwca, a ja pomyliłam terminy i myślałam że na 10 lipca  
                 Dodatkowo potem się okazało ze Maluszek, dla którego ma być, rodzi się 1 czerwca. Więc przyspieszenie było znaczące 
                 Ale udało się! 
                 Niech cieszy małe rączki 
@@ -48,8 +48,8 @@ function SecondPanel() {
                 Teraz jeszcze kilka rodzinno-przyjacielskich projektów i wracam do królików i jednorożców 
                 Obiecuje</p>
             </motion.div>    
-          <motion.div  animate={animation} className='w-2/3 flex justify-center align-center'>   
-            <img src={img2.src} className="w-4/5 rounded-lg" ref={ref}/> 
+          <motion.div  animate={animation} className='w-4/5 flex justify-center align-center'>   
+            <img src={img2.src} className="w-4/5 rounded-lg" /> 
           </motion.div>
           
         </div>
