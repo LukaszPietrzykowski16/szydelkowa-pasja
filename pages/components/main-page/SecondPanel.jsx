@@ -10,7 +10,7 @@ function SecondPanel() {
     const animation = useAnimation();
     const animation2 = useAnimation();
 
-    const [images, setImages] = useState([img0.src, img1.src, img2.src])
+    const [images, setImages] = useState([img0.src])
   
     const animationEl = useRef(null);
     const [index, setIndex] = useState(0);

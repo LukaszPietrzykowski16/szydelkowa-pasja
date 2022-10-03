@@ -1,21 +1,26 @@
 import React from 'react'
-import img1 from '../../images/third-project/img0.jpg'
-import img2 from '../../images/third-project/img1.jpg'
+import img0 from '../../images/third-project/img0.jpg'
+import img1 from '../../images/third-project/img1.jpg'
+import img2 from '../../images/third-project/img2.jpg'
 import { motion } from "framer-motion"
 import {useInView} from 'react-intersection-observer'
 import {useEffect, useState} from 'react'
 import {useAnimation} from 'framer-motion'
 
 function ThirdPanel() {
-
+  const [index, setIndex] = useState(0)
+  const images = [img0.src, img1.src, img2.src]
+  if (index === images.length){
+    setIndex(0)
+  }
+  if (index === -1){
+    setIndex(images.length - 1)
+  }
+  
   const {ref, inView} = useInView({
     threshold: 0.2
   });
   const animation1 = useAnimation();
-  const animation2 = useAnimation();
-  const animation3 = useAnimation();
-  const animation4 = useAnimation();
-  const animation5 = useAnimation();
 
   useEffect(() => {
     if(inView){
@@ -26,67 +31,21 @@ function ThirdPanel() {
           type: 'spring', duration: 1.5, bounce: 0.3, delay: 0.2,
         }
       })
-      animation2.start({
-        y: 0,
-        opacity: 1,
-        transition: {
-          type: 'spring', duration: 1.0, bounce: 0.3, delay: 0.4,
-        }
-      })
-      animation3.start({
-        y: 0,
-        opacity: 1,
-        transition: {
-          type: 'spring', duration: 1.2, bounce: 0.3, delay: 0.6,
-        }
-      })
-      animation4.start({
-        y: 0,
-        opacity: 1,
-        transition: {
-          type: 'spring', duration: 1.4, bounce: 0.3, delay: 0.8,
-        }
-      })
-      animation5.start({
-        y: 0,
-        opacity: 1,
-        transition: {
-          type: 'spring', duration: 1.6, bounce: 0.3, delay: 1.0,
-        }
-      })
     }
     if(!inView){
       animation1.start({y: '40vw', opacity: 0})
-      animation2.start({y: '20vh', opacity: 0})
-      animation3.start({y: '20vh', opacity: 0})
-      animation4.start({y: '20vh', opacity: 0})
-      animation5.start({y: '20vh', opacity: 0})
-
-
     }
     
   }, [inView])
 
-
+ 
     return (
-        <div className='flex flex-wrap justify-center align-center mt-5' ref={ref}>
+        <div className='relative flex flex-wrap justify-center align-center mt-5' ref={ref}>
+          <span className='bg-white absolute top-60 left-10 z-10'  onClick={() => setIndex(index - 1)}> Lewo </span>
           <motion.div className='w-4/5 flex justify-center align-center md:w-1/2' animate={animation1}>   
-            <img src={img1.src} className="w-full rounded-lg"/> 
+            <img src={images[index]} className="w-full rounded-lg"/> 
           </motion.div>
-          <div className='flex justify-center align-center'>
-            <motion.div className='img-box w-1/5 p-1' animate={animation2}>
-              <img src={img1.src} className="w-full rounded-lg"/>
-            </motion.div>
-            <motion.div className='img-box w-1/5 p-1' animate={animation3}>
-              <img src={img1.src} className="w-full rounded-lg"/>
-            </motion.div>
-            <motion.div className='img-box w-1/5  p-1' animate={animation4}>
-              <img src={img1.src} className="w-full rounded-lg"/>
-            </motion.div>
-            <motion.div className='img-box w-1/5 p-1' animate={animation5}>
-              <img src={img1.src} className="w-full rounded-lg"/>
-            </motion.div>
-          </div>
+          <span className='absolute top-60 right-10 bg-white' onClick={() => setIndex(index + 1)}> Prawo </span>
           <div className='w-4/5 mt-8 md:flex md:flex-wrap md:justify-around md:content-center md:p-10'>
             <h4 className='text-5xl'> Krokodyl "Michał" 🐊 </h4>
                 
