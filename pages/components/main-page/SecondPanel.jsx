@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 import img0 from '../../images/second-project/img1.jpg'
 import img1 from '../../images/second-project/img0.jpg'
 import img2 from '../../images/second-project/img2.jpg'
@@ -11,24 +11,21 @@ function SecondPanel() {
     const animation2 = useAnimation();
 
     const [images, setImages] = useState([img0.src, img1.src, img2.src])
-    const [index, setIndex] = useState(0)
-   
-    if (index === images.length){
-      setIndex(0)
-    }
-    useEffect(() => {
-        
-        const interval = setInterval(() => {
-        setIndex(index => index + 1)
-        }, 5000);
-            return () => clearInterval(interval);
-        }, []);
   
-   
-
-
-
-
+    const animationEl = useRef(null);
+    const [index, setIndex] = useState(0);
+  
+    useEffect(() => {
+      animationEl.current.addEventListener('animationiteration', () => {
+        setIndex(currentIndex => {
+          if (currentIndex + 1 < images.length) {
+            return currentIndex + 1;
+          } else {
+            return 0;
+          }
+        });
+      });
+    }, []);
     
     const {ref, inView} = useInView({
       threshold: 0.1
@@ -70,10 +67,7 @@ function SecondPanel() {
                 Obiecuje</p>
             </motion.div>    
           <motion.div  animate={animation}  className='w-4/5 flex justify-center align-center'>   
-
-            <img src={images[index]} className="w-4/5 rounded-lg" /> 
-             
-              
+              <img src={images[index]} className="w-4/5 rounded-lg fade-in-out" ref={animationEl} /> 
             </motion.div>
             
         </div>
