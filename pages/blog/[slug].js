@@ -2,12 +2,17 @@ import React from 'react'
 import Footer from '../components/Footer';
 import Navigation from '../Navigation';
 import { getExactPost, getPosts} from '../services';
+import { motion, useScroll } from "framer-motion";
 
 function PostDetails({post}) {
-   
+  const { scrollYProgress } = useScroll();
   return (
     <>
     <Navigation />
+      <motion.div
+        className="progress-bar"
+        style={{ scaleX: scrollYProgress }}
+      />
         <div className='flex flex-wrap justify-center align-center w-full'>
           <div className='flex justify-center align-center pt-8'>
           <img src={post[0].imageblog.url} className="w-4/5 rounded-lg"/>

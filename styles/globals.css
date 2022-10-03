@@ -167,6 +167,17 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   background-size: cover;
 }
 
+.progress-bar {
+  position: fixed;
+  top: 20;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: #12e1f1;
+  transform-origin: 0%;
+}
+
+
 .fade-in-out {
   animation: fade-in-out 5s both infinite;
 }
