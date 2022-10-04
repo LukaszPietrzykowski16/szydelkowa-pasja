@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../../images/logo.jpg';
+import Link from 'next/link';
 
 function Form() {
   return (
@@ -10,17 +11,18 @@ function Form() {
         <div className='pb-2'>
           Zapraszam na facebooka  
         </div> 
-      <button className="text-center bg-[#4267B2] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-        Facebook
-      </button>
+
+      <Link href="https://www.facebook.com/profile.php?id=100063693720962"><button className="text-center bg-[#4267B2] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+      Facebook
+      </button></Link>
       </div>
       <div className='w-full text-center'>  
       <div className='pb-2'>
       Zapraszam na bloga
       </div>
-      <button class="text-center bg-[#ef2c64]  hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+      <Link href="/blog"><button class="text-center bg-[#ef2c64]  hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
         Blog
-      </button>
+      </button></Link>
       
       </div>
    </div>
