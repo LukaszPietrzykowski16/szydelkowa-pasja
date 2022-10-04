@@ -6,6 +6,11 @@ import { motion } from "framer-motion"
 import {useInView} from 'react-intersection-observer'
 import {useEffect, useState} from 'react'
 import {useAnimation} from 'framer-motion'
+import { faXmarkCircle } from '@fortawesome/free-regular-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FaRight } from '@fortawesome/free-solid-svg-icons'
+import {faArrowLeft} from '@fortawesome/free-solid-svg-icons'
+import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
 
 function ThirdPanel() {
   const [index, setIndex] = useState(0)
@@ -59,12 +64,12 @@ function ThirdPanel() {
  
     return (
         <div className='relative flex flex-wrap justify-center align-center mt-5' ref={ref}>
-          <span className='bg-white absolute top-60 left-10 z-10' onClick={() => change(-1)}> Lewo </span>
+          <span className=' absolute top-60 left-10 z-10 w-10' onClick={() => change(-1)}>  <FontAwesomeIcon icon={faArrowLeft}/> </span>
           <motion.div className='w-4/5 flex justify-center align-center md:w-1/2' animate={animation1}>   
             <motion.img src={images[index]} className="w-full rounded-lg" animate={isOpen ? "open" : "closed"}
       variants={variants}/> 
           </motion.div>
-          <span className='absolute top-60 right-10 bg-white' onClick={() => change(+1)}> Prawo </span>
+          <span className='absolute top-60 right-10 w-10' onClick={() => change(+1)}>  <FontAwesomeIcon icon={faArrowRight} /> </span>
           <div className='w-4/5 mt-8 md:flex md:flex-wrap md:justify-around md:content-center md:p-10'>
             <h4 className='text-5xl'> Krokodyl "Michał" 🐊 </h4>
                 
