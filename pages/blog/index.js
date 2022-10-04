@@ -3,6 +3,8 @@ import React, {useState} from 'react'
 import Footer from '../components/Footer'
 import Navigation from '../Navigation'
 import getPosts from '../services'
+import { motion } from "framer-motion"
+
 
 function Blog ({posts}){
   
@@ -14,7 +16,7 @@ function Blog ({posts}){
   
   <div className='flex flex-wrap justify-center align-center mt-8 w-full'>
     <Link href={`/blog/${post.slug}`}>
-    <div className='w-4/5 rounded-lg p-4 border-2 border-sky-500'>
+    <motion.div  initial={{opacity: 0, y: '10vh'}} animate={{opacity: 1, y: 0}} transition={{ type: 'spring', duration: 1.3}} className='w-4/5 rounded-lg p-4 border-2 border-[#12e1f1]'>
     <div className='w-full'>
       <img src={post.imageblog.url} alt={post.title} className="rounded-lg"/>
     </div>
@@ -33,7 +35,7 @@ function Blog ({posts}){
     
     </div>
     
-    </div>
+    </motion.div>
     </Link>
     
  </div>)}
