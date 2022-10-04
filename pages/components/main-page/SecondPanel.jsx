@@ -2,6 +2,7 @@ import React, {useState, useEffect, useRef} from 'react'
 import img0 from '../../images/second-project/img1.jpg'
 import img1 from '../../images/second-project/img0.jpg'
 import img2 from '../../images/second-project/img2.jpg'
+import img3 from '../../images/second-project/img3.jpg'
 import { motion } from "framer-motion"
 import {useInView} from 'react-intersection-observer'
 import {useAnimation} from 'framer-motion'
@@ -10,7 +11,7 @@ function SecondPanel() {
     const animation = useAnimation();
     const animation2 = useAnimation();
 
-    const [images, setImages] = useState([img0.src])
+    const [images, setImages] = useState([img0.src, img1.src, img2.src, img3.src])
   
     const animationEl = useRef(null);
     const [index, setIndex] = useState(0);
