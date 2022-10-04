@@ -52,10 +52,10 @@ function Navigation() {
                 </li>
                 </ul>
                 <div className='flex flex-column content-end justify-end h-4/5 items-center'>
-                    <div className='w-8'>  <FontAwesomeIcon icon={faFacebook}/> </div>
-                    <div> 
-                    <button class="block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-                     Button
+                    <div className='w-8 text-[#4267B2]'>  <FontAwesomeIcon icon={faFacebook}/> </div>
+                    <div className='p-2'> 
+                    <button class="block bg-[#ef2c64] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                     Blog
                     </button>
                     </div>
                 </div>

@@ -64,14 +64,17 @@ function ThirdPanel() {
  
     return (
         <div className='relative flex flex-wrap justify-center align-center mt-5' ref={ref}>
-          <span className=' absolute top-60 left-10 z-10 w-10' onClick={() => change(-1)}>  <FontAwesomeIcon icon={faArrowLeft}/> </span>
+          <div className='flex justify-center align-center items-center h-full'>
+          <span className='z-10 w-5 mr-2 text-[#005a45]' onClick={() => change(-1)}>  <FontAwesomeIcon icon={faArrowLeft}/> </span>
           <motion.div className='w-4/5 flex justify-center align-center md:w-1/2' animate={animation1}>   
             <motion.img src={images[index]} className="w-full rounded-lg" animate={isOpen ? "open" : "closed"}
       variants={variants}/> 
           </motion.div>
-          <span className='absolute top-60 right-10 w-10' onClick={() => change(+1)}>  <FontAwesomeIcon icon={faArrowRight} /> </span>
+          <span className='w-5 ml-2 text-[#005a45]' onClick={() => change(+1)}>  <FontAwesomeIcon icon={faArrowRight} /> </span>
+          </div>
+         
           <div className='w-4/5 mt-8 md:flex md:flex-wrap md:justify-around md:content-center md:p-10'>
-            <h4 className='text-5xl'> Krokodyl "Michał" 🐊 </h4>
+            <h4 className='text-5xl pb-5'> Krokodyl "Michał" 🐊 </h4>
                 
             Na specjalne życzenie Mojego Chrzesniaka! 
             Ma prawie 50cm długości i wykonany jest z mieciutkiej pluszowej włóczki 
