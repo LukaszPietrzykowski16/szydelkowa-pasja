@@ -10,7 +10,7 @@ function Form() {
         <div className='pb-2'>
           Zapraszam na facebooka  
         </div> 
-      <button className="text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+      <button className="text-center bg-[#4267B2] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
         Facebook
       </button>
       </div>
@@ -18,7 +18,7 @@ function Form() {
       <div className='pb-2'>
       Zapraszam na bloga
       </div>
-      <button class="text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+      <button class="text-center bg-[#ef2c64]  hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
         Blog
       </button>
       
