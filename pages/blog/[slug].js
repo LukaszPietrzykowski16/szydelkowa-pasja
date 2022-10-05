@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Footer from '../components/Footer';
 import Navigation from '../Navigation';
 import { getExactPost, getPosts} from '../services';
 import { motion, useScroll } from "framer-motion";
+import Image from "next/image"
 
 function PostDetails({post}) {
   const { scrollYProgress } = useScroll();
+ 
+
   return (
     <>
     <Navigation />
@@ -22,6 +25,9 @@ function PostDetails({post}) {
           </div>
           <div className='w-4/5 md:w-2/3'>
           <p> {post[0].content.text}</p>
+          </div>
+          <div className='w-4/5 flex flex-wrap justify-center align-center pt-8'>
+            {post[0].morePhoto.map((test) => <div className='p-2 md:w-2/5'> <img src={test.url} className="rounded-lg"/> </div>)}
           </div>
           <div className='flex justify-between w-full w-4/5 md:w-2/3 m-1'>
           <div className=''>

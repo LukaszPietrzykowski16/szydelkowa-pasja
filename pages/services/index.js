@@ -39,6 +39,9 @@ export const getExactPost = async (slug) => {
       imageblog {
         url
       }
+      morePhoto {
+        url
+      }
     }
   }
   `
