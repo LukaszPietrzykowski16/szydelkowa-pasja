@@ -15,7 +15,7 @@ function PostDetails({post}) {
       <motion.div
         className="progress-bar"
         style={{ scaleX: scrollYProgress }}
-      />
+        />
         <div className='flex flex-wrap justify-center align-center w-full'>
           <div className='flex justify-center align-center pt-8'>
           <img src={post[0].imageblog.url} className="w-4/5 rounded-lg"  alt={post[0].title}/>
@@ -27,7 +27,7 @@ function PostDetails({post}) {
           <p> {post[0].content.text}</p>
           </div>
           <div className='w-4/5 flex flex-wrap justify-center align-center pt-8'>
-            {post[0].morePhoto.map((test) => <div className='p-2 md:w-2/5'> <img src={test.url} className="rounded-lg"/> </div>)}
+            {post[0].morePhoto.map((test) => <div className='p-2 md:w-2/5' key={test}> <img src={test.url} className="rounded-lg" key={test}/> </div>)}
           </div>
           <div className='flex justify-between w-full w-4/5 md:w-2/3 m-1'>
           <div className=''>

@@ -92,7 +92,7 @@ function ThirdPanel() {
           </div>
          
           <div className='w-4/5 mt-8 md:flex md:flex-wrap md:justify-around md:content-center md:p-10 md:w-2/3'>
-            <h4 className='text-5xl pb-5'> Krokodyl "Michał" 🐊 </h4>
+            <h4 className='text-5xl pb-5'> Krokodyl Michał 🐊 </h4>
                 
             Na specjalne życzenie Mojego Chrzesniaka! 
             Ma prawie 50cm długości i wykonany jest z mieciutkiej pluszowej włóczki 

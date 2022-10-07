@@ -56,7 +56,7 @@ function SecondPanel() {
     return (
         <div className='flex flex-wrap justify-center align-center mt-8 mb-8  md:flex-nowrap'>
             <motion.div animate={animation2} className="svg-bg w-full mt-8 mb-4 md:flex md:flex-wrap md:justify-around md:content-center md:p-10] rounded-lg" >
-                <h3 className='text-5xl pt-5 text-center' > Miś "Szymon" 🐻 </h3>
+                <h3 className='text-5xl pt-5 text-center' > Miś Szymon 🐻 </h3>
                 <p className='p-10' ref={ref}>Miał być zrobiony na 10 czerwca, a ja pomyliłam terminy i myślałam że na 10 lipca  
                 Dodatkowo potem się okazało ze Maluszek, dla którego ma być, rodzi się 1 czerwca. Więc przyspieszenie było znaczące 
                 Ale udało się! 

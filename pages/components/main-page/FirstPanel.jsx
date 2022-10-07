@@ -60,10 +60,10 @@ function FirstPanel() {
         <motion.div className='div3' animate={animation3} viewport={{ once: true }}> <img src={img0.src} className="w-full rounded-lg -z-10" alt='kucyk pony klaudia'/> </motion.div>
       </div>
       <div className='w-10/12 mt-8  md:flex md:flex-wrap md:justify-around md:content-center md:p-10'>
-      <h2 className='text-5xl pb-7' ref={ref}> Kucyk Pony "Klaudia" 🦄 </h2>
-      <p className='colorful-border'>Tak właściwie to "Jednorożec mini mini" ze wzoru Ezerioszka - handmade 
+      <h2 className='text-5xl pb-7' ref={ref}> Kucyk Pony Klaudia 🦄 </h2>
+      <p className='colorful-border'>Tak właściwie to Jednorożec mini mini ze wzoru Ezerioszka - handmade 
       Ma ok 20cm wysokości na siedząco i 30cm w pozycji leżącej. Jednak po grudniowym Gigancie jest naprawdę dość małych gabarytów, jednak uroku ma w sobie mnóstwo 
-      Miał być kolorowy i jedyny w swoim rodzaju. Dla wspaniałej zumbowiczki i kreatorki ogrodów. Bo jak to mówię "Rękodzieło jest dla wszystkich. Dla Małych i Dużych"  </p>
+      Miał być kolorowy i jedyny w swoim rodzaju. Dla wspaniałej zumbowiczki i kreatorki ogrodów. Bo jak to mówię Rękodzieło jest dla wszystkich. Dla Małych i Dużych  </p>
       </div>
     </div>
     

@@ -14,7 +14,7 @@ function Blog ({posts}){
     <div className='block md:grid md:grid-cols-3'>
     {posts.map((post) => 
   
-  <div className='flex flex-wrap justify-center align-center mt-8 w-full'>
+  <div className='flex flex-wrap justify-center align-center mt-8 w-full' key={post}>
     <Link href={`/blog/${post.slug}`}>
     <motion.div  initial={{opacity: 0, y: '10vh'}} animate={{opacity: 1, y: 0}} transition={{ type: 'spring', duration: 1.3}} className='w-4/5 rounded-lg p-4 border-2 border-[#12e1f1]'>
     <div className='w-full'>
