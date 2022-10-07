@@ -86,7 +86,7 @@ function ThirdPanel() {
           <motion.span className='z-10 w-5 mr-2 text-[#005a45]' animate={animation2} onClick={() => change(-1)}>  <FontAwesomeIcon icon={faArrowLeft}/> </motion.span>
           <motion.div className='w-4/5 flex justify-center align-center md:w-1/2' animate={animation1}>   
             <motion.img src={images[index]} className="w-full rounded-lg" animate={isOpen ? "open" : "closed"}
-      variants={variants}/> 
+      variants={variants}  alt='krokodyl michał'/> 
           </motion.div>
           <motion.span className='w-5 ml-2 text-[#005a45]' onClick={() => change(+1)} animate={animation3}>  <FontAwesomeIcon icon={faArrowRight} /> </motion.span>
           </div>

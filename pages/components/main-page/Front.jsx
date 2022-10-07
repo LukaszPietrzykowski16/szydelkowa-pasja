@@ -21,7 +21,7 @@ function Front() {
                initial={{y: '50vh', opacity: 0}}
                animate={{y: 0, opacity: 1}}
                transition={{ type: 'spring', duration: 1.5, bounce: 0.3}}> 
-               <img src={picture.src} className="sm:center w-4/5 md:w-4/5 md:w-10/12 rounded-lg z-10 m-6 rounded-lg"/> 
+               <img src={picture.src} className="sm:center w-4/5 md:w-4/5 md:w-10/12 rounded-lg z-10 m-6 rounded-lg"  alt='Kasia Kowalska'/> 
                </motion.div>
               </motion.div>
                 

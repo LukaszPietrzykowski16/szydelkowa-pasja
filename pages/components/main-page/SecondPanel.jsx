@@ -68,7 +68,7 @@ function SecondPanel() {
                 Obiecuje</p>
             </motion.div>    
           <motion.div  animate={animation}  className='w-4/5 flex justify-center align-center'>   
-              <img src={images[index]} className="w-4/5 rounded-lg fade-in-out" ref={animationEl} /> 
+              <img src={images[index]} className="w-4/5 rounded-lg fade-in-out" ref={animationEl}  alt='miś szymon'/> 
             </motion.div>
             
         </div>

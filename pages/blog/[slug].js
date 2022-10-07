@@ -18,7 +18,7 @@ function PostDetails({post}) {
       />
         <div className='flex flex-wrap justify-center align-center w-full'>
           <div className='flex justify-center align-center pt-8'>
-          <img src={post[0].imageblog.url} className="w-4/5 rounded-lg"/>
+          <img src={post[0].imageblog.url} className="w-4/5 rounded-lg"  alt={post[0].title}/>
           </div>
           <div className='w-4/5 text-center'>
           <h1 className='text-4xl pt-4 pb-8 w-full'> {post[0].title} </h1>

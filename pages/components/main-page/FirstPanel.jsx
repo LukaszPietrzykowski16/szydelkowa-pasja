@@ -55,9 +55,9 @@ function FirstPanel() {
   return (
     <div className='flex flex-wrap justify-center align-center mt-8 mb-8 md:flex-nowrap h-4/5 w-full mb-20 md:mb-5'>
       <div className='parent w-4/5 pt-5'>   
-        <motion.div className='div1' animate={animation1} viewport={{ once: true }}> <img src={img2.src} className="w-full rounded-lg -z-10"/> </motion.div>
-        <motion.div className='div2' animate={animation2} viewport={{ once: true }}> <img src={img1.src} className="w-full rounded-lg -z-10"/> </motion.div>
-        <motion.div className='div3' animate={animation3} viewport={{ once: true }}> <img src={img0.src} className="w-full rounded-lg -z-10"/> </motion.div>
+        <motion.div className='div1' animate={animation1} viewport={{ once: true }}> <img src={img2.src} className="w-full rounded-lg -z-10" alt='kucyk pony klaudia'/> </motion.div>
+        <motion.div className='div2' animate={animation2} viewport={{ once: true }}> <img src={img1.src} className="w-full rounded-lg -z-10" alt='kucyk pony klaudia'/> </motion.div>
+        <motion.div className='div3' animate={animation3} viewport={{ once: true }}> <img src={img0.src} className="w-full rounded-lg -z-10" alt='kucyk pony klaudia'/> </motion.div>
       </div>
       <div className='w-10/12 mt-8  md:flex md:flex-wrap md:justify-around md:content-center md:p-10'>
       <h2 className='text-5xl pb-7' ref={ref}> Kucyk Pony "Klaudia" 🦄 </h2>
