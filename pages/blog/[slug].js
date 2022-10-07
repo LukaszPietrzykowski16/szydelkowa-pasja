@@ -10,10 +10,10 @@ function PostDetails({post}) {
 
 
   const exact = () => {
-   post.map((test) => {
-        console.log(test)
+   return post.map((test) => {
+        return test.title
     })
-    return 'it is working'
+    
 
   }
 
