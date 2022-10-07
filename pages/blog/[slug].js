@@ -11,7 +11,7 @@ function PostDetails({post}) {
 
   const exact = () => {
    return post.map((exactPost) => {
-        return  <div className='flex flex-wrap justify-center align-center w-full'>
+        return  <div className='flex flex-wrap justify-center align-center w-full' key={exactPost}>
         <div className='flex justify-center align-center pt-8'>
         <img src={exactPost.imageblog.url} className="w-4/5 rounded-lg"  alt={exactPost.title}/>
         </div>
