@@ -45,7 +45,7 @@ function Navigation() {
                     <li> <Link href="/"> Strona główna </Link> </li>
                 </ul>
                 <ul className='p-8'>
-                    <li>  <Link href="/"> Blog </Link> </li>
+                    <li>  <Link href="/blog"> Blog </Link> </li>
                 </ul>
                 <ul className='p-8'>
                     <li> <Link href="/o-mnie"> O mnie </Link>
