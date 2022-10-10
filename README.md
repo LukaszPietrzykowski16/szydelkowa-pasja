@@ -9,7 +9,7 @@ Live version: https://szydelkowa-pasja.vercel.app
 
 # Tech stack:
 - Next.js
-    Framer Motion
+    - Framer Motion
 - Tailwind CSS
 - GraphQL
 - Hygraph and vercel for deployment
