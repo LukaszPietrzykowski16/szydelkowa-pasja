@@ -15,3 +15,4 @@ Live version: https://szydelkowa-pasja.vercel.app
 - Hygraph and vercel for deployment
 
 <img src="./pages/images/img1.PNG"/>
+
