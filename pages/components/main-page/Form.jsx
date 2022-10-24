@@ -9,7 +9,7 @@ function Form() {
    <div className="flex flex-wrap justify-center align-center border-sky-500 glass block p-6 rounded-lg w-4/5 md:w-4/5 mt-8">
       <div className='w-full text-center'>
         <div className='pb-2'>
-          Zapraszam na facebooka  
+          Zapraszam na facebooka   
         </div> 
 
       <Link href="https://www.facebook.com/profile.php?id=100063693720962"><button className="text-center bg-[#4267B2] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
